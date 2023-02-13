@@ -1,0 +1,178 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        //IF
+        //we will get number from user and will print it only if it is 10 or 8\
+
+      /*  //scanner declaration
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("enter number");
+        int number = scanner.nextInt();
+
+        //if
+        if (number == 10) { //this will be printed only when number == 10
+            //print number
+            System.out.println("inside the if statement " + number);
+            //more code
+
+        } else { //will be printed otherwise -> number != 10
+            System.out.println("in the else statement");
+
+        }
+
+
+
+        //this will be printed always
+        System.out.println("outside if else statement");
+*/
+
+        //exercise
+        //getting speed from the user
+        //IF speed > 120 -> print too fast!
+        //if speed < 80  -> too slow!
+        // if speed >= 80 <= 120 -> print good driver!
+
+      /*  //scanner
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("please input the speed");
+        int speed = scanner.nextInt();
+        //else if...
+        //90
+        if (speed > 120) {// case too fast
+            System.out.println("too fast!");
+        } else if (speed < 80) { //case too slow
+            System.out.println("too slow!");
+        } else {//all other cases
+            System.out.println("good driver");
+        }
+        */
+
+      //exercise.
+      //get two ages of two brothers as input .
+      //for example tomersAge and dannysAge.
+      //if tomers Age is bigger print "Tomer is older brother"
+      //if Dannys Age is bigger print "Danny is older brother"
+      //if ages are equal print "Tomer and Danny are twins"
+
+     /*   Scanner scanner = new Scanner(System.in);
+        //taking input Danny's age
+        System.out.println("please input Dannys age");
+        //save dannys age to the variable dannysAge
+        int dannysAge = scanner.nextInt();
+        //taking input Tomer's age
+        System.out.println("please input Tomers age");
+        //save tomer's age to the variable tomersAge
+        int tomersAge = scanner.nextInt();
+
+        if (tomersAge > dannysAge) {
+            System.out.println("Tomer is an older brother");
+        } else if (tomersAge == dannysAge) {
+            System.out.println("the brothers are twins");
+        } else { //danny is older
+            System.out.println("Danny is older brother");
+        }
+        */
+
+        //input number from the user
+        //check if number is even or odd
+        //if even print --> even
+        //if odd print --> odd.
+        //Hint: use modulo
+       /* Scanner scanner = new Scanner(System.in);
+        //taking input
+        System.out.println("please input number");
+        int number = scanner.nextInt();
+
+        //the number is even if number modulo 2 = 0 --> otherwise is odd
+        if (number%2 == 0) {
+            System.out.println("even");
+        } else {
+            System.out.println("odd");
+        }
+*/
+/*
+
+        Scanner scanner = new Scanner(System.in);
+        //taking input
+        System.out.println("please input number");
+        int x = scanner.nextInt();
+        switch (x) {
+            case  1 :
+                System.out.println("one");
+                break;
+            case  2 :
+                System.out.println("two");
+                break;
+
+            case 5 :
+                System.out.println("the number is five");
+                break;
+            default:
+                System.out.println("other number");
+        }
+*/
+
+        /*int num1 = 20;
+        int num2 = 30;
+        System.out.println( Math.max(num1, num2));
+        */
+        //random number between 0 and 1
+        /*int randomNum = (int)(Math.random()*3)+1; //random number between 1 and 3
+        System.out.println( randomNum);*/
+
+
+        //Exercise
+        //Get number from the user from 1 to 7/
+        //print the day of the week according to the number
+        //Example 1--> sunday
+        //6--> friday
+        //7 --> saturday.
+        //if number not in range 1 to 7 print "not legal number"
+        //HINT : use Switch case.
+
+       /* Scanner scanner = new Scanner(System.in);
+        //taking input
+        System.out.println("please input number between 1 and 7");
+        int dayOfTheWeek = scanner.nextInt();*/
+
+        //random number between 1 and 7
+        int dayOfTheWeek = (int)(Math.random()*7)+1;
+        System.out.println("the random number which we get is : " + dayOfTheWeek);
+        switch(dayOfTheWeek) {
+            case 1:
+                // sunday
+                System.out.println("sunday");
+                break;
+            case 2:
+                // code block
+                System.out.println("monday");
+                break;
+            case 3:
+                //
+                System.out.println("tuesday");
+                break;
+            case 4:
+                System.out.println("wednesday");
+                //
+                break;
+            case 5:
+                System.out.println("thursday");
+                //
+                break;
+            case 6:
+                System.out.println("friday");
+                //
+                break;
+            case 7:
+                System.out.println("saturday");
+                //
+                break;
+            default:
+                System.out.println("wrong input");
+                // code block
+        }
+    }
+}
